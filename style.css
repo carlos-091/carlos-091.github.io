@@ -9,6 +9,11 @@ background:#0b0f1a;
 color:white;
 }
 
+/* CORREÇÃO DO CORTE DAS SEÇÕES */
+section{
+scroll-margin-top: 110px;
+}
+
 /* HEADER FIXO */
 
 header{
