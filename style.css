@@ -14,14 +14,11 @@ header{
     background-repeat: no-repeat;
 
     color:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    height:200px;
+    text-align:center;
+    padding:60px 20px;
 }
 
-/* OVERLAY ESCURO (MELHORA LEITURA) */
+/* OVERLAY ESCURO */
 
 header::before{
     content:"";
@@ -33,34 +30,12 @@ header::before{
     background:rgba(0,0,0,0.5);
 }
 
-/* GARANTE QUE O CONTEÚDO FIQUE NA FRENTE */
+/* GARANTE TEXTO VISÍVEL */
 
-header *{
+header .logo{
     position:relative;
-}
-
-/* LOGO */
-
-.logo{
-    font-size:22px;
+    font-size:26px;
     font-weight:bold;
-}
-
-/* MENU */
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-nav a:hover{
-    opacity:0.7;
 }
 
 /* HERO */
