@@ -8,11 +8,8 @@ font-family:'Poppins', sans-serif;
 background:#0b0f1a;
 color:white;
 
-/* COMPENSA HEADER FIXO */
 padding-top:80px;
 }
-
-/* HEADER */
 
 header{
 position:fixed;
