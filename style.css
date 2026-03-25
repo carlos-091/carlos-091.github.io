@@ -143,3 +143,17 @@ footer{
     text-align:center;
     padding:20px;
 }
+
+/* CONTATO */
+
+.contato{
+    padding:60px;
+    text-align:center;
+    background:#020617;
+}
+
+.contato-box{
+    margin-top:20px;
+    font-size:18px;
+    line-height:30px;
+}
