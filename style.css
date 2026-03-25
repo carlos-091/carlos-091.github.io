@@ -1,7 +1,8 @@
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
+    background:#0b0f1a;
+    color:white;
 }
 
 /* HEADER COM IMAGEM */
@@ -14,8 +15,10 @@ header{
     background-repeat: no-repeat;
 
     color:white;
-    text-align:center;
-    padding:60px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
 }
 
 /* OVERLAY ESCURO */
@@ -27,24 +30,102 @@ header::before{
     left:0;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.6);
 }
 
-/* GARANTE TEXTO VISÍVEL */
-
-header .logo{
+header *{
     position:relative;
-    font-size:26px;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:22px;
     font-weight:bold;
 }
 
-/* HERO */
+/* MENU */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* HERO COM IMAGEM */
 
 .hero{
+    background-image: url("fundo.png");
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    padding:150px 20px;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero *{
+    position:relative;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+/* BOTÕES */
+
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn{
     background:#0a63ff;
     color:white;
-    text-align:center;
-    padding:120px 20px;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#008cff;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:black;
 }
 
 /* SOBRE */
@@ -52,14 +133,13 @@ header .logo{
 .sobre{
     padding:60px;
     text-align:center;
-    background:white;
+    background:#111827;
 }
 
 /* FOOTER */
 
 footer{
-    background:#1a1a1a;
-    color:white;
+    background:#020617;
     text-align:center;
     padding:20px;
 }
