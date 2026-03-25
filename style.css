@@ -9,19 +9,18 @@ body{
 
 header{
     position:relative;
-    background-image: url("fundo.png");
+    background-image: url("./fundo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 40px;
 }
 
-/* OVERLAY ESCURO */
+/* OVERLAY */
 
 header::before{
     content:"";
@@ -62,10 +61,10 @@ nav a:hover{
     color:#00c3ff;
 }
 
-/* HERO COM IMAGEM */
+/* HERO */
 
 .hero{
-    background-image: url("fundo.png");
+    background-image: url("./fundo.png");
     background-size: cover;
     background-position: center;
     text-align:center;
@@ -97,51 +96,12 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-/* BOTÕES */
-
-.botoes{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.btn{
-    background:#0a63ff;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#008cff;
-}
-
-.btn-outline{
-    background:transparent;
-    border:2px solid white;
-}
-
-.btn-outline:hover{
-    background:white;
-    color:black;
-}
-
 /* SOBRE */
 
 .sobre{
     padding:60px;
     text-align:center;
     background:#111827;
-}
-
-/* FOOTER */
-
-footer{
-    background:#020617;
-    text-align:center;
-    padding:20px;
 }
 
 /* CONTATO */
@@ -156,4 +116,12 @@ footer{
     margin-top:20px;
     font-size:18px;
     line-height:30px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
 }
